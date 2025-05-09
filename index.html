@@ -1,0 +1,5039 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>PokéSeries</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="topbar">
+      <div id="title">
+        <h2>PokéSeries</h2>
+        <h4 id="subtitle" style="color: #21c063; margin-top: -4px">home</h4>
+      </div>
+      <div id="navbar">
+        <div class="navbar-option" onclick="Main(0)">
+          <p>Home</p>
+        </div>
+        <div class="navbar-option" onclick="Main(1)">
+          <p>Episodi</p>
+        </div>
+        <div class="navbar-option" onclick="Main(2)">
+          <p>Pokédex</p>
+        </div>
+      </div>
+      <div id="menu-btn" onclick="Menu()">
+        <div class="menu-line" id="menu-topline"></div>
+        <div class="menu-line" id="menu-bottomline"></div>
+      </div>
+    </div>
+
+    <div id="menu">
+      <div class="menu-option" onclick="Main(0)">
+        <i id="home-icon" class="fi fi-sr-house-user"></i>
+        <p>Home</p>
+      </div>
+      <div class="menu-option" onclick="Main(1)">
+        <i id="episodes-icon" class="fi fi-tr-clapperboard-play"></i>
+        <p>Episodi</p>
+      </div>
+      <div class="menu-option" onclick="Main(2)">
+        <i id="pokedex-icon" class="fi fi-tr-rectangle-list"></i>
+        <p>Pokédex</p>
+      </div>
+    </div>
+
+    <div id="btn-to-top" onclick="window.location.href='#topbar'">
+      <i class="fi fi-tr-arrow-small-up"></i>
+    </div>
+
+    <div class="main" id="main-home">
+      <div id="home-container">
+        <div class="home-section" id="home-top">
+          <div id="home-title">
+            <h1>Diamante & Perla</h1>
+          </div>
+          <div id="home-logo">
+            <img draggable="false" src="PokemonDPlogo.png" />
+          </div>
+        </div>
+
+        <div class="home-section" id="home-trama">
+          <div id="home-trama-container">
+            <div id="home-trama-title">
+              <h2>Trama</h2>
+            </div>
+            <div id="home-trama-text">
+              <p>
+                Pokemon Diamante e Perla racconta il viaggio di Ash nella
+                regione di Sinnoh, accompagnato dal fidato Pikachu, dal solito
+                Brock e da una new entry, la frizzante Lucinda, una ragazzina
+                che viaggia accompagnata dal suo Piplup. Ad ostacolare i
+                successi dei nostri eroi, naturalmente, c’è il solito Team
+                Rocket, ma non solo...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-section" id="home-table">
+          <div id="home-table-container">
+            <div class="home-table-section">
+              <h3>51</h3>
+              <p>Episodi</p>
+            </div>
+            <div class="home-table-section">
+              <h3>23min/ep</h3>
+              <p>Durata</p>
+            </div>
+            <div class="home-table-section">
+              <h3>OLM</h3>
+              <p>Studio</p>
+            </div>
+            <div class="home-table-section">
+              <h3>Avventura, Azione, Bambini, Commedia, Fantasy</h3>
+              <p>Genere</p>
+            </div>
+            <div class="home-table-section">
+              <h3>28 Settembre 2006</h3>
+              <p>Data di Uscita</p>
+            </div>
+            <div class="home-table-section">
+              <h3>Concluso</h3>
+              <p>Stato</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-section" id="home-slider">
+          <div id="home-slider-container">
+            <div id="home-slider-img">
+              <div class="pokemon-slide" id="first-slide">
+                <div class="pokemon-slide-gif">
+                  <a><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/turtwig.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>001</h3>
+                  <h2>Turtwig</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img draggable="false" src="artworks\001turtwig.png" />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <a><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/grotle.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>002</h3>
+                  <h2>Grotle</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img draggable="false" src="artworks\002grotle.png" />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <a><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/torterra.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>003</h3>
+                  <h2>Torterra</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img draggable="false" src="artworks\003torterra.png" />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <a><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/chimchar.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>004</h3>
+                  <h2>Chimchar</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/004chimchar.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <a><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/monferno.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>005</h3>
+                  <h2>Monferno</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/005monferno.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <a><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/infernape.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>006</h3>
+                  <h2>Infernape</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/006infernape.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <apiplup"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/piplup.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>007</h3>
+                  <h2>Piplup</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/007piplup.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aprinplup"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/prinplup.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>008</h3>
+                  <h2>Prinplup</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/008prinplup.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aempoleon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/empoleon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>009</h3>
+                  <h2>Empoleon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/009empoleon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <astarly"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/starly.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>010</h3>
+                  <h2>Starly</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/010starly.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <astaravia"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/staravia.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>011</h3>
+                  <h2>Staravia</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/011staravia.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <astaraptor"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/staraptor.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>012</h3>
+                  <h2>Staraptor</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/012staraptor.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abidoof"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/bidoof.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>013</h3>
+                  <h2>Bidoof</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/013bidoof.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abibarel"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/bibarel.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>014</h3>
+                  <h2>Bibarel</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/014bibarel.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <akricketot"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/kricketot.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>015</h3>
+                  <h2>Kricketot</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/015kricketot.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <akricketune"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/kricketune.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>016</h3>
+                  <h2>Kricketune</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/016kricketune.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ashinx"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/shinx.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>017</h3>
+                  <h2>Shinx</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/017shinx.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aluxio"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/luxio.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>018</h3>
+                  <h2>Luxio</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/018luxio.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aluxray"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/luxray.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>019</h3>
+                  <h2>Luxray</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/019luxray.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abudew"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/budew.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>020</h3>
+                  <h2>Budew</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/020budew.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aroserade"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/roserade.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>021</h3>
+                  <h2>Roserade</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/021roserade.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <acranidos"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/cranidos.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>022</h3>
+                  <h2>Cranidos</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/022cranidos.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <arampardos"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/rampardos.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>023</h3>
+                  <h2>Rampardos</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/023rampardos.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ashieldon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/shieldon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>024</h3>
+                  <h2>Shieldon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/024shieldon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abastiodon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/bastiodon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>025</h3>
+                  <h2>Bastiodon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/025bastiodon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aburmy"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/burmy.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>026</h3>
+                  <h2>Burmy</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/026burmy.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <awormadam"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/wormadam.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>027</h3>
+                  <h2>Wormadam</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/027wormadam.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amothim"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/mothim.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>028</h3>
+                  <h2>Mothim</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/028mothim.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <acombee"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/combee.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>029</h3>
+                  <h2>Combee</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/029combee.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <avespiquen"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/vespiquen.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>030</h3>
+                  <h2>Vespiquen</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/030vespiquen.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <apachirisu"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/pachirisu.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>031</h3>
+                  <h2>Pachirisu</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/031pachirisu.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abuizel"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/buizel.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>032</h3>
+                  <h2>Buizel</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/032buizel.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <afloatzel"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/floatzel.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>033</h3>
+                  <h2>Floatzel</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/033floatzel.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <acherubi"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/cherubi.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>034</h3>
+                  <h2>Cherubi</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/034cherubi.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <acherrim"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/cherrim.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>035</h3>
+                  <h2>Cherrim</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/035cherrim.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ashellos"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/shellos.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>036</h3>
+                  <h2>Shellos</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/036shellos.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <agastrodon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/gastrodon-east.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>037</h3>
+                  <h2>Gastrodon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/037gastrodon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aambipom"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/ambipom.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>038</h3>
+                  <h2>Ambipom</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/038ambipom.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <adrifloon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/drifloon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>039</h3>
+                  <h2>Drifloon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/039drifloon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <adrifblim"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/drifblim.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>040</h3>
+                  <h2>Drifblim</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/040drifblim.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abuneary"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/buneary.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>041</h3>
+                  <h2>Buneary</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/041buneary.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <alopunny"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/lopunny.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>042</h3>
+                  <h2>Lopunny</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/042lopunny.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amismagius"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/mismagius.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>043</h3>
+                  <h2>Mismagius</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/043mismagius.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ahonchkrow"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/honchkrow.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>044</h3>
+                  <h2>Honchkrow</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/044honchkrow.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aglameow"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/glameow.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>045</h3>
+                  <h2>Glameow</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/045glameow.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <apurugly"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/purugly.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>046</h3>
+                  <h2>Purugly</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/046purugly.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <achingling"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/chingling.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>047</h3>
+                  <h2>Chingling</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/047chingling.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <astunky"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/stunky.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>048</h3>
+                  <h2>Stunky</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/048stunky.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <askuntank"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/skuntank.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>049</h3>
+                  <h2>Skuntank</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/049skuntank.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abronzor"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/bronzor.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>050</h3>
+                  <h2>Bronzor</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/050bronzor.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abronzong"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/bronzong.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>051</h3>
+                  <h2>Bronzong</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/051bronzong.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <abonsly"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/bonsly.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>052</h3>
+                  <h2>Bonsly</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/052bonsly.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amime-jr"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/mime-jr.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>053</h3>
+                  <h2>Mime Jr.</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/053mimejr.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ahappiny"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/happiny.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>054</h3>
+                  <h2>Happiny</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/054happiny.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <achatot"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/chatot.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>055</h3>
+                  <h2>Chatot</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/055chatot.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aspiritomb"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/spiritomb.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>056</h3>
+                  <h2>Spiritomb</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/056spiritomb.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <agible"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/gible.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>057</h3>
+                  <h2>Gible</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/057gible.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <agabite"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/gabite.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>058</h3>
+                  <h2>Gabite</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/058gabite.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <agarchomp"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/garchomp.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>059</h3>
+                  <h2>Garchomp</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/059garchomp.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amunchlax"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/munchlax.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>060</h3>
+                  <h2>Munchlax</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/060munchlax.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ariolu"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/riolu.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>061</h3>
+                  <h2>Riolu</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/061riolu.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <alucario"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/lucario.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>062</h3>
+                  <h2>Lucario</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/062lucario.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ahippopotas"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/hippopotas.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>063</h3>
+                  <h2>Hippopotas</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/063hippopotas.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ahippowdon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/hippowdon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>064</h3>
+                  <h2>Hippowdon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/064hippowdon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <askorupi"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/skorupi.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>065</h3>
+                  <h2>Skorupi</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/065skorupi.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <adrapion"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/drapion.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>066</h3>
+                  <h2>Drapion</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/066drapion.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <acroagunk"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/croagunk.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>067</h3>
+                  <h2>Croagunk</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/067croagunk.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <atoxicroak"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/toxicroak.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>068</h3>
+                  <h2>Toxicroak</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/068toxicroak.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <acarnivine"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/carnivine.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>069</h3>
+                  <h2>Carnivine</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/069carnivine.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <afinneon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/finneon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>070</h3>
+                  <h2>Finneon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/070finneon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <alumineon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/lumineon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>071</h3>
+                  <h2>Lumineon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/071lumineon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amantyke"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/mantyke.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>072</h3>
+                  <h2>Mantyke</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/072mantyke.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <asnover"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/snover.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>073</h3>
+                  <h2>Snover</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/073snover.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aabomasnow"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/abomasnow.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>075</h3>
+                  <h2>Abomasnow</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/074abomasnow.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aweavile"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/weavile.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>074</h3>
+                  <h2>Weavile</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/075weavile.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amagnezone"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/magnezone.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>076</h3>
+                  <h2>Magnezone</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/076magnezone.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <alickilicky"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/lickilicky.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>077</h3>
+                  <h2>Lickilicky</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/077lickilicky.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <arhyperior"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/rhyperior.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>078</h3>
+                  <h2>Rhyperior</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/078rhyperior.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <atangrowth"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/tangrowth.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>079</h3>
+                  <h2>Tangrowth</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/079tangrowth.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aelectivire"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/electivire.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>080</h3>
+                  <h2>Electivire</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/080electivire.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amagmortar"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/magmortar.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>081</h3>
+                  <h2>Magmortar</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/081magmortar.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <atogekiss"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/togekiss.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>082</h3>
+                  <h2>Togekiss</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/082togekiss.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ayanmega"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/yanmega.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>083</h3>
+                  <h2>Yanmega</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/083yanmega.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aleafeon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/leafeon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>084</h3>
+                  <h2>Leafeon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/084leafeon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aglaceon"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/glaceon.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>085</h3>
+                  <h2>Glaceon</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/085glaceon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <agliscor"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/gliscor.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>086</h3>
+                  <h2>Gliscor</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/086gliscor.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amamoswine"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/mamoswine.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>087</h3>
+                  <h2>Mamoswine</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/087mamoswine.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aporygon-z"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/porygon-z.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>088</h3>
+                  <h2>Porygon-Z</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/088porygonz.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <agallade"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/gallade.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>089</h3>
+                  <h2>Gallade</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/089gallade.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aprobopass"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/probopass.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>090</h3>
+                  <h2>Probopass</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/090probopass.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <adusknoir"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/dusknoir.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>091</h3>
+                  <h2>Dusknoir</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/091dusknoir.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <afroslass"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/froslass.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>092</h3>
+                  <h2>Froslass</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/092froslass.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <arotom"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/rotom.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>093</h3>
+                  <h2>Rotom</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/093rotom.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <auxie"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/uxie.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>094</h3>
+                  <h2>Uxie</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/094uxie.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amesprit"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/mesprit.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>095</h3>
+                  <h2>Mesprit</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/095mesprit.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aazelf"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/azelf.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>096</h3>
+                  <h2>Azelf</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/096azelf.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <adialga"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/dialga.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>097</h3>
+                  <h2>Dialga</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/097dialga.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <apalkia"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/palkia.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>098</h3>
+                  <h2>Palkia</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/098palkia.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aheatran"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/heatran.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>099</h3>
+                  <h2>Heatran</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/099heatran.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aregigigas"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/regigigas.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>100</h3>
+                  <h2>Regigigas</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/100regigigas.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <agiratina"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/giratina-altered.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>101</h3>
+                  <h2>Giratina</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/101giratina.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <acresselia"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/cresselia.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>102</h3>
+                  <h2>Cresselia</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/102cresselia.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aphione"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/phione.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>103</h3>
+                  <h2>Phione</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/103phione.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <amanaphy"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/manaphy.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>104</h3>
+                  <h2>Manaphy</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/104manaphy.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <adarkrai"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/darkrai.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>105</h3>
+                  <h2>Darkrai</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/105darkrai.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <ashaymin"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/shaymin-land.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>106</h3>
+                  <h2>Shaymin</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/106shaymin.png"
+                  />
+                </div>
+              </div>
+
+              <div class="pokemon-slide">
+                <div class="pokemon-slide-gif">
+                  <aarceus"
+                    ><img
+                      src="https://img.pokemondb.net/sprites/black-white/anim/normal/arceus.gif"
+                  /></a>
+                </div>
+                <div class="pokemon-slide-info">
+                  <h3>107</h3>
+                  <h2>Arceus</h2>
+                </div>
+                <div class="pokemon-slide-sprite">
+                  <img
+                    draggable="false"
+                    src="artworks/107arceus.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="home-slider-button-container">
+              <div class="home-slider-button" onclick="SlideLeft()">
+                <i class="fi fi-tr-angle-small-left"></i>
+              </div>
+              <div class="home-slider-button" onclick="SlideRight()">
+                <i class="fi fi-tr-angle-small-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main" id="main-episodi">
+      <div id="episodi-counter-container">
+        <div id="episodi-counter">
+          <h2>Episodi Preferiti:</h2>
+          <h2 id="counter-episodi" style="color: #21c063">0</h2>
+        </div>
+      </div>
+
+      <div id="episodi-list">
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Un inizio burrascoso!</h3>
+              <h4 style="color: #21c062">Ep 01</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(0)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(0)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                Lucinda, una ragazza di 10 anni che vive nella città di
+                Duefoglie nella regione di Sinnoh, aspira a diventare una grande
+                coordinatrice Pokémon come sua madre Olga, e parte per il
+                Laboratorio Pokémon di Sabbiafine per scegliere il suo primo
+                Pokémon, Piplup. Nel mentre, Ash è arrivato a Sinnoh, ma il
+                fallimento di un piano del Team Rocket lo porta a cadere dentro
+                una foresta.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Errori da principianti!</h3>
+              <h4 style="color: #21c062">Ep 02</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(1)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(1)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                Lucinda, col suo nuovo compagno Piplup, si incammina verso
+                Giubilopoli per la sua prima Gara Pokémon. Dopo aver trovato
+                Pikachu, però, comincia a cercare il suo allenatore. Nel
+                frattempo anche Ash è alla ricerca di Pikachu con l'aiuto di uno
+                Starly appena catturato, il suo vecchio amico Brock, il
+                Professor Rowan, l'Infermiera Joy e l'Agente Jenny.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Alla ricerca di Pikachu!</h3>
+              <h4 style="color: #21c062">Ep 03</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(2)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(2)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                Ash trova e salva Pikachu nel bel mezzo di una battaglia con il
+                Team Rocket e il loro robot. Dopo essersi presentati, Ash e
+                Lucinda diventano amici e informano il Professor Rowan di aver
+                ritrovato Pikachu. Nel mentre Ash trova un nuovo rivale, Paul.
+                Dopo che i due si scontrano sui rispettivi metodi di allenamento
+                decidono di sfidarsi in una battaglia 3 contro 3.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Il nuovo mondo di Lucinda!</h4>
+              <h4 style="color: #21c062">Ep 04</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(3)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(3)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                I tentativi di Ash di aiutare Lucinda a catturare i Pokémon non
+                stanno andando molto bene, e i due iniziano a litigare. Volendo
+                mettersi alla prova con Ash, Lucinda sfida in battaglia un
+                allenatore Pokémon di nome Nando. I due in seguito scoprono che
+                Nando è abile ma indeciso se cimentarsi nelle Palestre o Gare
+                Pokémon, costringendo Ash e Lucinda a provare a convincerlo con
+                le loro rispettive competizioni preferite.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Un Pokémon generoso!</h3>
+              <h4 style="color: #21c062">Ep 05</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(4)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(4)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Dopo che un piano del Team Rocket va storto, Pikachu si ritrova
+                a incontrare un Turtwig selvatico, una guida dei Pokémon
+                nell'area in cui vive. Quando Ash trova Pikachu, Turtwig diventa
+                protettivo nei confronti del Pokémon, ignaro che sia di Ash.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Il bosco delle illusioni!</h3>
+              <h4 style="color: #21c062">Ep 06</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(5)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(5)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash incontra di nuovo Paul, con la loro rivalità che aumenta
+                quando Ash scopre che Paul libera i Pokémon che vede essere
+                troppo deboli. I due combattono di nuovo, vedendo il Turtwig
+                appena catturato da Ash contro il Chimchar di Paul.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Il processo delle bacche!</h3>
+              <h4 style="color: #21c062">Ep 07</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(6)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(6)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Un gruppo di Pokémon di tipo Acqua e un Ludicolo stanno
+                litigando per del cibo, Piplup poi scopre che il Team Rocket ha
+                preso tutto e deve trovare un modo per usare le sue mosse da
+                Gare Pokémon per recuperarlo.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Bugiardi in palestra!</h3>
+              <h4 style="color: #21c062">Ep 08</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(7)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(7)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Una ragazza di nome Minnie è convinta che la prossima Palestra
+                Pokémon sia gestita da una donna di nome Principessa di
+                Powerzone, che usa un Croagunk. In realtà, è una farsa messa in
+                atto dal Team Rocket per catturare i Pokémon!
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>Un nuovo compagno di viaggio!</h5>
+              <h4 style="color: #21c062">Ep 09</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(8)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(8)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Un Buneary selvaggio inizia ad innamorarsi di Pikachu, e quando
+                Lucinda cerca di catturarlo, si dimostra piuttosto timido.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Tutti pazzi per il PokéKron!</h4>
+              <h4 style="color: #21c062">Ep 10</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(9)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(9)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Lucinda cerca di acquisire il popolare gadget PokéKron. Tuttavia
+                il Team Rocket trae vantaggio da questo distribuendo agli
+                allenatori PokéKron falsi che fanno il lavaggio del cervello ai
+                loro Pokémon usando la voce di uno Psyduck.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>Che lo spettacolo abbia inizio!</h5>
+              <h4 style="color: #21c062">Ep 11</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(10)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(10)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Lucinda è ansiosa di partecipare alla Gara Pokémon di
+                Giubilopoli e incontra Zoey, un'altra ragazza, con la quale
+                inizia subito una rivalità. Anche l'Aipom di Ash è molto ansioso
+                di partecipare alla gara, quindi anche Ash partecipa, oltre a
+                Jessie in incognito.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Una rivale per Lucinda!</h3>
+              <h4 style="color: #21c062">Ep 12</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(11)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(11)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                La Gara Pokémon di Giubilopoli continua, contrapponendo Zoey a
+                Dawn nelle semifinali, ma chi raggiungerà la finale?
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>La nascita di uno Staravia!</h4>
+              <h4 style="color: #21c062">Ep 13</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(12)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(12)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Ash tenta di addestrare il suo Starly. Tuttavia, finisce per
+                essere catturato dal Team Rocket insieme ad altri Pokémon
+                uccello. Fortunatamente, Starly salva la situazione quando si
+                evolve in Staravia e padroneggia Aeroassalto.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Ci pensa Brock!</h3>
+              <h4 style="color: #21c062">Ep 14</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(13)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(13)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Brock aiuta a riunire un Nuzleaf con il suo fratello Shiftry, ma
+                il Team Rocket continua a intromettersi, volendo Nuzleaf per il
+                boss. Nel frattempo, il Bonsly di Brock si evolve in Sudowoodo e
+                deve sfidare la sua paura dell'acqua per proteggere Nuzleaf.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>La prima gara!</h3>
+              <h4 style="color: #21c062">Ep 15</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(14)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(14)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash è arrivato alla Palestra di Mineropoli, ma il Capopalestra
+                di tipo Roccia, Pedro, ha già programmato un incontro con Paul.
+                Paul combatte usando tutti i metodi che ad Ash non piacciono, ma
+                vincerà la Medaglia Carbone?
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Un aspro finale!</h3>
+              <h4 style="color: #21c062">Ep 16</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(15)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(15)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash è ancora arrabbiato con Paul per i suoi metodi di lotta dopo
+                che ha regalato il suo Azumarill a un ragazzino, e cerca di
+                dimostrargli che le sue tattiche possono sconfiggere i forti
+                Pokémon di tipo Roccia di Pedro.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Panico in città!</h3>
+              <h4 style="color: #21c062">Ep 17</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(16)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(16)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Mentre Ash si allena per la rivincita con Pedro, il Team Rocket
+                progetta di impossessarsi di un Pokémon fossile. Una volta
+                rianimato un Aerodactyl, emergono molti altri Pokémon antichi.
+                Sono necessari la nuova combo di Lucinda e il Rampardos appena
+                evoluto di Pedro per fermarli completamente, creando un nuovo
+                stile di allenamento.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>La sfida contro Rampardos!</h4>
+              <h4 style="color: #21c062">Ep 18</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(17)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(17)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Durante la sua rivincita con Pedro, riuscirà Ash a sfruttare al
+                meglio una mossa eseguita dai Pokémon di Lucinda per sconfiggere
+                il Rampardos appena evoluto di Pedro?
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Un Pokémon molto vivace!</h4>
+              <h4 style="color: #21c062">Ep 19</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(18)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(18)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                La banda incontra un Pachirisu molto iperattivo. Ma quando
+                Lucinda lo cattura, mette in dubbio le sue capacità di
+                addestratrice quando i suoi tentativi di controllarlo
+                falliscono.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>La cacciatrice di Pokémon!</h4>
+              <h4 style="color: #21c062">Ep 20</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(19)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(19)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e i suoi amici incontrano la Cacciatrice di Pokémon J, una
+                donna dal sangue freddo che vende Pokémon ai migliori offerenti
+                per denaro. Quando rapisce Pikachu e Meowth, la banda si vede
+                costretta a stringere un'alleanza con il Team Rocket per
+                riportarli indietro entrambi.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>La macchina per l'evoluzione!</h5>
+              <h4 style="color: #21c062">Ep 21</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(20)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(20)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e i suoi amici incontrano la lega della B, una coppia che
+                possiede il Magikarp più potente e il Feebas più bello che
+                possano esserci, e si rifiutano di farli evolvere. Nel
+                frattempo, il Team Rocket usa una macchina in evoluzione che
+                hanno acquistato dal venditore di Magikarp per rapire loro - e
+                Pikachu, e tentare di farli evolvere.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Un Pokémon in prestito!</h4>
+              <h4 style="color: #21c062">Ep 22</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(21)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(21)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Sulla strada per Giardinfiorito, si sta tenendo una Gara Pokémon
+                non ufficiale, con Lucinda che usa il suo nuovo Pachirisu,
+                mentre Jessie prende in prestito l'Aipom di Ash, di cui Ash è
+                incerto.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Uno Steelix infuriato!</h3>
+              <h4 style="color: #21c062">Ep 23</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(22)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(22)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Quando Ash trova un Bidoof ferito, vengono attaccati da uno
+                Steelix infuriato, nel quale il Team Rocket conficca
+                accidentalmente delle pale.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Pikachu in prestito!</h3>
+              <h4 style="color: #21c062">Ep 24</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(23)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(23)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e i suoi amici ricevono una richiesta da una giovane donna
+                di nome Theresa che vuole prendere in prestito il Pikachu di
+                Ash. È nei guai perché il Pikachu di sua zia Abigail
+                (soprannominato Sugar), che aiutava a preparare le torte nella
+                sua pasticceria, è improvvisamente scomparso.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Scuola di cucina!</h3>
+              <h4 style="color: #21c062">Ep 25</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(24)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(24)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash ed i suoi amici arrivano a Giardinfiorito. Vengono a sapere
+                che in città è stato aperto un corso che insegna come preparare
+                lo "spuntino Pokémon", Poffin. Provano a creare il loro primo
+                Poffin con l'aiuto di Forsythia e della sua apparentemente
+                timida Roserade, ma le cose non stanno andando per il verso
+                giusto.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Brividi pre-gara!</h3>
+              <h4 style="color: #21c062">Ep 26</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(25)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(25)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                È il giorno prima della Gara Pokémon di Giardinfiorito e Lucinda
+                incontra il suo amico d'infanzia Kenny, che ha uno sguardo
+                attento su Ash e decide di affrontarlo.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Il primo fiocco di Lucinda!</h4>
+              <h4 style="color: #21c062">Ep 27</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(26)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(26)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Mentre la Gara di Giardinfiorito continua, Lucinda e Kenny
+                arrivano alla finale, lasciando la battaglia tra Piplup e la sua
+                forma evoluta, Prinplup. Chi vincerà il premio finale?
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Due simpatiche ragazze!</h4>
+              <h4 style="color: #21c062">Ep 28</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(27)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(27)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                Ash e i suoi amici incontrano un'infermiera Joy in un Centro
+                Pokémon con il suo branco di Drifloon di proprietà delle sue
+                figlie, Marnie e Paige. Quando un piano fallito del Team Rocket
+                per catturare Ampharos oscura l'Impianto Turbine della Valle e
+                una folata di vento fa volare via Paige e Pikachu, Marnie deve
+                fare affidamento sull'aiuto del suo amico speciale Suicune per
+                salvare sua sorella gemella e Pikachu.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>I gemelli imbattibili!</h3>
+              <h4 style="color: #21c062">Ep 29</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(28)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(28)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e Lucinda (con i loro Turtwig e Piplup) hanno la loro prima
+                battaglia in coppia con i Campioni Gemelli - Brian e Ryan, che
+                viene registrata per il programma televisivo "Sinnoh Now" della
+                giornalista Rhonda. Tuttavia, iniziano a combattere e finiscono
+                per perdere. Ash e Lucinda riusciranno a imparare a lavorare in
+                squadra?
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Il miele incantato!</h3>
+              <h4 style="color: #21c062">Ep 30</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(29)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(29)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e il gruppo incontrano Cheryl, una cacciatrice di tesori che
+                viaggia attraverso il Bosco Evopoli, alla ricerca del Miele
+                Incantato, insieme alla sua Chansey. Cattura un Burmy maschio,
+                poiché ha bisogno che si evolva in un Mothim per ottenere il
+                Miele Incantato al Castello d'Ambra.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>La ricerca continua!</h3>
+              <h4 style="color: #21c062">Ep 31</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(30)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(30)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e i suoi amici continuano la loro ricerca del Miele
+                Incantato. Durante il loro viaggio, incontrano Gardenia, la
+                Capopalestra di Evopoli, dove Ash ha una lotta di allenamento
+                con lei, ma il Turtwig di Ash non si rivela all'altezza dei
+                Pokémon di Gardenia.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Il castello ambrato!</h3>
+              <h4 style="color: #21c062">Ep 32</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(31)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(31)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                La ricerca del Miele Incantato si conclude quando i nostri eroi
+                arrivano al Castello di Amber, sede di un alveare di Combee e
+                del loro leader, la regina Vespiquen.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>La grande gara di travestimento!</h5>
+              <h4 style="color: #21c062">Ep 33</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(32)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(32)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Ash e i suoi amici competono nella gara di travestimento Pokémon
+                di Sinnoh in cui un Pokémon deve imitarne un altro per vincere
+                il premio, ovvero un uovo Pokémon.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Il ladro di canne da pesca!</h4>
+              <h4 style="color: #21c062">Ep 34</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(33)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(33)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Ash e i suoi amici incontrano un Buizel selvatico, con Ash,
+                Lucinda e Zoey che cercano di catturarlo.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>Un superquattro come amico!</h5>
+              <h4 style="color: #21c062">Ep 35</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(34)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(34)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e i suoi amici incontrano Lucian, un appassionato di Pokémon
+                sensitivi e uno dei Superquattro di Sinnoh. Lucinda decide di
+                mettere alla prova la sua fortuna contro il Bronzong di Lucian
+                con il suo Buizel appena catturato, ma Buizel non ascolta
+                nessuno dei comandi di Lucinda.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Il furto della sfera!</h3>
+              <h4 style="color: #21c062">Ep 36</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(35)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(35)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                L'Adamasfera viene rubata dal Museo della Città di Evopoli e il
+                menestrello errante Nando viene accusato del crimine dall'agente
+                locale Jenny (che ha uno Stunky). Ash e i suoi amici, insieme
+                alla Capopalestra Gardenia e all'Agente di Smeraldopoli Jenny,
+                tentano di localizzare i veri ladri.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>L'esperta di Pokémon d'erba!</h5>
+              <h4 style="color: #21c062">Ep 37</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(36)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(36)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Ash finalmente affronta una lotta in palestra con Gardenia, la
+                capopalestra di Evopoli, in uno scontro 3 contro 3 fino alla
+                fine.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>La famiglia cresce!</h3>
+              <h4 style="color: #21c062">Ep 38</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(37)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(37)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Il gruppo si ritrova in un Centro Pokémon quasi abbandonato
+                gestito da un'Infermiera Joy a cui il blues del suo centro non
+                viene utilizzato molto. Tuttavia, quando scopre che l'uovo di
+                Brock sta per schiudersi, riesce a dimostrare la sua utilità
+                mentre l'Uovo si schiude in un Happiny.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Una crociera da brivido!</h3>
+              <h4 style="color: #21c062">Ep 39</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(38)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(38)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e i suoi amici decidono di fare un viaggio su una nave per
+                turisti. Chiamano tutti i loro Pokémon per mostrare loro la
+                bellissima vista che hanno dall'interno. Dato che manca ancora
+                molto tempo prima che la nave decolli, il gruppo decide di fare
+                un po' di shopping nelle vicinanze, lasciando i Pokémon da soli
+                a bordo. La situazione finisce nel caos.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Il coraggio di Paul!</h3>
+              <h4 style="color: #21c062">Ep 40</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(39)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(39)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                Ash e i suoi amici incontrano Camilla, Campionessa dei
+                Superquattro di Sinnoh, proprio mentre sta per iniziare una
+                battaglia con il rivale di Ash, Paul, che rivela di aver
+                gareggiato in quattro regioni e mostra il suo primo Pokémon:
+                Torterra, che ha evoluto dal suo Turtwig. Quando Paul decide di
+                sfidare Camilla, nessuno dei suoi Pokémon si dimostra
+                all'altezza del Garchomp di Camilla.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Un'amica in gamba!</h3>
+              <h4 style="color: #21c062">Ep 41</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(40)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(40)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash ed i suoi amici vengono in aiuto di Zoey poiché si è
+                infortunata alla caviglia destra. Dice loro che l'imminente Gara
+                richiede che il Coordinatore Pokémon usi due Pokémon
+                contemporaneamente. Dawn, non avendo esperienza di battaglie in
+                doppio, finisce per seguire un corso intensivo con risultati
+                comici.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>La fabbrica di energia!</h3>
+              <h4 style="color: #21c062">Ep 42</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(41)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(41)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                Ash ed i suoi amici incontrano Jocko, che sta cercando di
+                disciplinare il suo Electrike, che ha problemi con la sua
+                precisione. Brock chiede se può provare ad addestrarlo. Inoltre,
+                ispirati dalla dedizione di Electrike verso il miglioramento,
+                James e Meowth del Team Rocket decidono di dare una mano, ma
+                Jessie non vuole niente di tutto ciò e vuole ancora catturare
+                Electrike.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>Ash nel paese delle meraviglie!</h5>
+              <h4 style="color: #21c062">Ep 43</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(42)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(42)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e i suoi amici (insieme al Team Rocket) si perdono e
+                decidono di ripararsi dalla pioggia sotto un vecchio cancello.
+                Dopo aver visto una strana luce, ognuno vede soddisfatti i
+                propri desideri interiori. Tuttavia, le cose lentamente ma
+                inesorabilmente diventano sempre più strane ogni secondo che
+                passa..
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Un Hippopotas in pericolo!</h4>
+              <h4 style="color: #21c062">Ep 44</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(43)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(43)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Ash e i suoi amici incontrano un Hippopotas randagio e lo
+                riportano al suo branco in migrazione, ma il Team Rocket vuole
+                catturare Hippopotas.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Caccia allo Shieldon!</h3>
+              <h4 style="color: #21c062">Ep 45</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(44)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(44)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h3 style="font-weight: normal">
+                Pokémon Hunter J ritorna, ora prendendo di mira un gruppo di
+                Shieldon. Riusciranno Ash e i suoi amici, insieme all'ex rivale
+                di Ash, Gary Oak, a proteggere lo Shieldon dalla presa malvagia
+                del cacciatore?
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>La corsa attraverso il labirinto!</h5>
+              <h4 style="color: #21c062">Ep 46</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(45)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(45)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                Lucinda vuole ottenere la nuova app PokéKron lanciamonete, ma va
+                accidentalmente al Centro Pokémon sbagliato. Dopo aver scoperto
+                il luogo esatto in cui ottenere la domanda, i nostri eroi si
+                mettono in viaggio. Tuttavia, il Team Rocket ha creato un
+                labirinto, che consentirebbe loro di separare la banda e rubare
+                i loro Pokémon, ma il piano inizia a fallire quando Golem e un
+                Onix creano problemi.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Una simpatica bugiarda!</h4>
+              <h4 style="color: #21c062">Ep 47</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(46)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(46)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Ash e i suoi amici incontrano Mira, una misteriosa ragazza, e la
+                sua Abra. Li guida in una selvaggia spedizione subacquea per
+                recuperare un Sandshrew che ha perso da bambina, ma trova
+                problemi poiché un Gyarados li attacca ripetutamente..
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h5>La Gara di Doppia Performance!</h5>
+              <h4 style="color: #21c062">Ep 48</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(47)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(47)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h5 style="font-weight: normal">
+                Ash e gli altri raggiungono finalmente Cuoripoli, solo per
+                scoprire che la palestra è chiusa. Nel frattempo, è il giorno
+                della Gara di Cuoripoli, solo per ritrovarsi contro tutti i suoi
+                rivali: Zoey, Jessie del Team Rocket e il menestrello errante
+                Nando. Tuttavia, la fase della performance si rivela più
+                difficile per Lucinda e i suoi Pokémon di quanto pensasse...
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h4>Il torneo di incontri doppi!</h4>
+              <h4 style="color: #21c062">Ep 49</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(48)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(48)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                L'intero gruppo partecipa a un torneo di battaglia di coppia a
+                Cuoripoli. Brock è accoppiato con una domatrice di uccelli di
+                nome Holly, Dawn è accoppiata con un addestratore nerd di nome
+                Conway e Ash finisce con il suo rivale Paul.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>Senza pietà!</h3>
+              <h4 style="color: #21c062">Ep 50</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(49)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(49)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Il torneo di battaglia Pokémon Tag-Team di Cuoripoli continua,
+                mentre Paul costringe Chimchar a combattere ben oltre il suo
+                limite. Tuttavia alla fine, Paul ne ha avuto abbastanza e libera
+                Chimchar davanti ad Ash.
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodio">
+          <div class="screen-container">
+            <div class="screen"></div>
+          </div>
+          <div class="episodio-info">
+            <div class="episodio-info-title">
+              <h3>La finale di Cuoripoli!</h3>
+              <h4 style="color: #21c062">Ep 51</h4>
+            </div>
+            <div class="episodio-info-icon">
+              <i class="fi fi-sr-circle-star" onclick="Favorite(50)"></i>
+            </div>
+          </div>
+          <div class="episodio-trama-container">
+            <div class="episodio-trama-btn" onclick="Trama(50)">
+              <h3>Trama</h3>
+            </div>
+            <div class="episodio-trama">
+              <h4 style="font-weight: normal">
+                Dopo che Chimchar accetta l'invito di Ash a unirsi alla squadra,
+                Ash combatte al fianco di Paul nelle semifinali del torneo
+                contro Brock e Holly. Arrivano rapidamente alla finale dove
+                vengono abbinati a Lucinda e Conway.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main" id="main-pokedex">
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks\001turtwig.png"
+            style="width: 150px"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 turtwig style="display: inline-block">Turtwig</h3>
+          <h5>001</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks\002grotle.png"
+            style="height: 134px"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 grotle style="display: inline-block">Grotle</h3>
+          <h5>002</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks\003torterra.png"
+            style="width: 134px"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 torterra style="display: inline-block">Torterra</h3>
+          <h5>003</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/004chimchar.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 chimchar style="display: inline-block">Chimchar</h3>
+          <h5>004</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/005monferno.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 monferno style="display: inline-block">Monferno</h3>
+          <h5>005</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/006infernape.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 infernape style="display: inline-block">Infernape</h3>
+          <h5>006</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/007piplup.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 piplup style="display: inline-block">Piplup</h3>
+          <h5>007</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/008prinplup.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 prinplup style="display: inline-block">Prinplup</h3>
+          <h5>008</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/009empoleon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 empoleon style="display: inline-block">Empoleon</h3>
+          <h5>009</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/010starly.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 starly style="display: inline-block">Starly</h3>
+          <h5>010</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/011staravia.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 staravia style="display: inline-block">Staravia</h3>
+          <h5>011</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/012staraptor.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 staraptor style="display: inline-block">Staraptor</h3>
+          <h5>012</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/013bidoof.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 bidoof style="display: inline-block">Bidoof</h3>
+          <h5>013</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/014bibarel.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 bibarel style="display: inline-block">Bibarel</h3>
+          <h5>014</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/015kricketot.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 kricketot style="display: inline-block">Kricketot</h3>
+          <h5>015</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/016kricketune.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 kricketune style="display: inline-block">Kricketune</h3>
+          <h5>016</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/017shinx.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 shinx style="display: inline-block">Shinx</h3>
+          <h5>017</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/018luxio.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 luxio style="display: inline-block">Luxio</h3>
+          <h5>018</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/019luxray.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 luxray style="display: inline-block">Luxray</h3>
+          <h5>019</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/020budew.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 budew style="display: inline-block">Budew</h3>
+          <h5>020</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/021roserade.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 roserade style="display: inline-block">Roserade</h3>
+          <h5>021</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/022cranidos.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 cranidos style="display: inline-block">Cranidos</h3>
+          <h5>022</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/023rampardos.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 rampardos style="display: inline-block">Rampardos</h3>
+          <h5>023</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/024shieldon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 shieldon style="display: inline-block">Shieldon</h3>
+          <h5>024</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/025bastiodon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 bastiodon style="display: inline-block">Bastiodon</h3>
+          <h5>025</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/026burmy.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 burmy style="display: inline-block">Burmy</h3>
+          <h5>026</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/027wormadam.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 wormadam style="display: inline-block">Wormadam</h3>
+          <h5>027</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/028mothim.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 mothim style="display: inline-block">Mothim</h3>
+          <h5>028</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/029combee.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 combee style="display: inline-block">Combee</h3>
+          <h5>029</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/030vespiquen.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 vespiquen style="display: inline-block">Vespiquen</h3>
+          <h5>030</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/031pachirisu.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 pachirisu style="display: inline-block">Pachirisu</h3>
+          <h5>031</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/032buizel.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 buizel style="display: inline-block">Buizel</h3>
+          <h5>032</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/033floatzel.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 floatzel style="display: inline-block">Floatzel</h3>
+          <h5>033</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/034cherubi.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 cherubi style="display: inline-block">Cherubi</h3>
+          <h5>034</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/035cherrim.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 cherrim style="display: inline-block">Cherrim</h3>
+          <h5>035</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/036shellos.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 shellos style="display: inline-block">Shellos</h3>
+          <h5>036</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/037gastrodon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 gastrodon style="display: inline-block">Gastrodon</h3>
+          <h5>037</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/038ambipom.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 ambipom style="display: inline-block">Ambipom</h3>
+          <h5>038</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/039drifloon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 drifloon style="display: inline-block">Drifloon</h3>
+          <h5>039</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/040drifblim.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 drifblim style="display: inline-block">Drifblim</h3>
+          <h5>040</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/041buneary.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 buneary style="display: inline-block">Buneary</h3>
+          <h5>041</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/042lopunny.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 lopunny style="display: inline-block">Lopunny</h3>
+          <h5>042</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/043mismagius.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 mismagius style="display: inline-block">Mismagius</h3>
+          <h5>043</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/044honchkrow.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 honchkrow style="display: inline-block">Honchkrow</h3>
+          <h5>044</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/045glameow.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 glameow style="display: inline-block">Glameow</h3>
+          <h5>045</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/046purugly.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 purugly style="display: inline-block">Purugly</h3>
+          <h5>046</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/047chingling.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 chingling style="display: inline-block">Chingling</h3>
+          <h5>047</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/048stunky.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 stunky style="display: inline-block">Stunky</h3>
+          <h5>048</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/049skuntank.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 skuntank style="display: inline-block">Skuntank</h3>
+          <h5>049</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/050bronzor.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 bronzor style="display: inline-block">Bronzor</h3>
+          <h5>050</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/051bronzong.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 bronzong style="display: inline-block">Bronzong</h3>
+          <h5>051</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/052bonsly.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 bonsly style="display: inline-block">Bonsly</h3>
+          <h5>052</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/053mimejr.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 mimejr style="display: inline-block">Mime Jr.</h3>
+          <h5>053</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/054happiny.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 happiny style="display: inline-block">Happiny</h3>
+          <h5>054</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/055chatot.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 chatot style="display: inline-block">Chatot</h3>
+          <h5>055</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/056spiritomb.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 spiritomb style="display: inline-block">Spiritomb</h3>
+          <h5>056</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/057gible.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 gible style="display: inline-block">Gible</h3>
+          <h5>057</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/058gabite.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 gabite style="display: inline-block">Gabite</h3>
+          <h5>058</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/059garchomp.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 garchomp style="display: inline-block">Garchomp</h3>
+          <h5>059</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/060munchlax.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 munchlax style="display: inline-block">Munchlax</h3>
+          <h5>060</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/061riolu.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 riolu style="display: inline-block">Riolu</h3>
+          <h5>061</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/062lucario.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 lucario style="display: inline-block">Lucario</h3>
+          <h5>062</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/063hippopotas.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 hippopotas style="display: inline-block">Hippopotas</h3>
+          <h5>063</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/064hippowdon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 hippowdon style="display: inline-block">Hippowdon</h3>
+          <h5>064</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/065skorupi.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 skorupi style="display: inline-block">Skorupi</h3>
+          <h5>065</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/066drapion.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 drapion style="display: inline-block">Drapion</h3>
+          <h5>066</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/067croagunk.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 croagunk style="display: inline-block">Croagunk</h3>
+          <h5>067</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/068toxicroak.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 toxicroak style="display: inline-block">Toxicroak</h3>
+          <h5>068</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/069carnivine.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 carnivine style="display: inline-block">Carnivine</h3>
+          <h5>069</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/070finneon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 finneon style="display: inline-block">Finneon</h3>
+          <h5>070</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/071lumineon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 lumineon style="display: inline-block">Lumineon</h3>
+          <h5>071</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/072mantyke.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 mantyke style="display: inline-block">Mantyke</h3>
+          <h5>072</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/073snover.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 snover style="display: inline-block">Snover</h3>
+          <h5>073</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/074abomasnow.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 abomasnow style="display: inline-block">Abomasnow</h3>
+          <h5>074</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/075weavile.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 weavile style="display: inline-block">Weavile</h3>
+          <h5>075</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/076magnezone.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 magnezone style="display: inline-block">Magnezone</h3>
+          <h5>076</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/077lickilicky.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 lickilicky style="display: inline-block">Lickilicky</h3>
+          <h5>077</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/078rhyperior.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 rhyperior style="display: inline-block">Rhyperior</h3>
+          <h5>078</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/079tangrowth.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 tangrowth style="display: inline-block">Tangrowth</h3>
+          <h5>079</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/080electivire.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 electivire style="display: inline-block">Electivire</h3>
+          <h5>080</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/081magmortar.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 magmortar style="display: inline-block">Magmortar</h3>
+          <h5>081</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/082togekiss.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 togekiss style="display: inline-block">Togekiss</h3>
+          <h5>082</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/083yanmega.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 yanmega style="display: inline-block">Yanmega</h3>
+          <h5>083</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/084leafeon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 leafeon style="display: inline-block">Leafeon</h3>
+          <h5>084</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/085glaceon.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 glaceon style="display: inline-block">Gleaceon</h3>
+          <h5>085</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/086gliscor.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 gliscor style="display: inline-block">Gliscor</h3>
+          <h5>086</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/087mamoswine.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 mamoswine style="display: inline-block">Mamoswine</h3>
+          <h5>087</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/088porygonz.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 porygonz style="display: inline-block">Porygon-Z</h3>
+          <h5>088</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/089gallade.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 gallade style="display: inline-block">Gallade</h3>
+          <h5>089</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/090probopass.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 probopass style="display: inline-block">Probopass</h3>
+          <h5>090</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/091dusknoir.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 dusknoir style="display: inline-block">Dusknoir</h3>
+          <h5>091</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/092froslass.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 froslass style="display: inline-block">Froslass</h3>
+          <h5>092</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/093rotom.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 rotom style="display: inline-block">Rotom</h3>
+          <h5>093</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/094uxie.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 uxie style="display: inline-block">Uxie</h3>
+          <h5>094</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/095mesprit.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 mesprit style="display: inline-block">Mesprit</h3>
+          <h5>095</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/096azelf.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 azelf style="display: inline-block">Azelf</h3>
+          <h5>096</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/097dialga.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 dialga style="display: inline-block">Dialga</h3>
+          <h5>097</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/098palkia.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 palkia style="display: inline-block">Palkia</h3>
+          <h5>098</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/099heatran.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 heatran style="display: inline-block">Heatran</h3>
+          <h5>099</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/100regigigas.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 regigigas style="display: inline-block">Regigigas</h3>
+          <h5>100</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/101giratina.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 giratina style="display: inline-block">Giratina</h3>
+          <h5>101</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/102cresselia.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 cresselia style="display: inline-block">Cresselia</h3>
+          <h5>102</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/103phione.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 phione style="display: inline-block">Phione</h3>
+          <h5>103</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/104manaphy.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 manaphy style="display: inline-block">Manaphy</h3>
+          <h5>104</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/105darkrai.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 darkrai style="display: inline-block">Darkrai</h3>
+          <h5>105</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/106shaymin.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 shaymin style="display: inline-block">Shaymin</h3>
+          <h5>106</h5>
+        </div>
+      </div>
+
+      <div class="pokemon-card">
+        <div class="pokemon-card-img">
+          <img
+            draggable="false"
+            src="artworks/107arceus.png"
+          />
+        </div>
+        <div class="pokemon-card-info">
+          <h3 arceus style="display: inline-block">Arceus</h3>
+          <h5>107</h5>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="footer-text">
+        <h3>PokéSeries</h3>
+      </div>
+      <div class="footer-text">
+        <p style="font-size: small">
+          Dai Fan di Pokémon,<br />per i Fan di Pokémon.
+        </p>
+      </div>
+      <div id="footer-line-container">
+        <div id="footer-line"></div>
+      </div>
+      <div class="footer-text">
+        <p style="font-size: small">©Copyright. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
